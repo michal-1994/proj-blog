@@ -1,0 +1,32 @@
+.nav ul {
+    list-style: none;
+    display: flex;
+    align-items: baseline;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    margin: 0 var(--size-4);
+}
+
+.nav a {
+    color: var(--color-grey-100);
+    font-size: var(--size-4);
+}
+
+.nav a:hover,
+.nav a:active,
+.nav a.active {
+    color: var(--color-grey-200);
+}
+
+@media (min-width: 768px) {
+    .nav ul {
+        gap: 0.5rem;
+    }
+
+    .nav a {
+        font-size: var(--size-5);
+    }
+}
