@@ -4,21 +4,14 @@ import PostHeader from './post-header';
 
 import classes from './post-content.module.css';
 
-const DUMMY_POST = {
-    title: 'JavaScript for advanced',
-    image: 'javascript-for-advanced.jpg',
-    content: '# This is a first post',
-    date: '2023-11-01',
-    slug: 'javascript-for-advanced'
-};
-
-function PostContent() {
-    const imagePath = `/images/posts/${DUMMY_POST.slug}/${DUMMY_POST.image}`;
+function PostContent(props) {
+    const { title, image, content, slug } = props.post;
+    const imagePath = `/images/posts/${slug}/${image}`;
 
     return (
         <article className={classes.content}>
-            <PostHeader title={DUMMY_POST.title} image={imagePath} />
-            <Markdown>{DUMMY_POST.content}</Markdown>
+            <PostHeader title={title} image={imagePath} />
+            <Markdown>{content}</Markdown>
         </article>
     );
 }
