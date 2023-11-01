@@ -1,6 +1,6 @@
 ---
 title: Css for beginners
-date: '2023-12-01'
+date: '2023-01-01'
 image: css-for-beginners.jpg
 excerpt: Nunc in urna augue. Duis id justo commodo, fringilla ipsum eget, sollicitudin augue. Phasellus sit amet fermentum nisl. Aenean in arcu lorem.
 isFeatured: false
