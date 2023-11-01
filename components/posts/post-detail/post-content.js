@@ -5,13 +5,13 @@ import PostHeader from './post-header';
 import classes from './post-content.module.css';
 
 function PostContent(props) {
-    const { title, image, content, slug } = props.post;
-    const imagePath = `/images/posts/${slug}/${image}`;
+    const { post } = props;
+    const imagePath = `/images/posts/${post.slug}/${post.image}`;
 
     return (
         <article className={classes.content}>
-            <PostHeader title={title} image={imagePath} />
-            <Markdown>{content}</Markdown>
+            <PostHeader title={post.title} image={imagePath} />
+            <Markdown>{post.content}</Markdown>
         </article>
     );
 }
